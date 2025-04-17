@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登山動画シーン説明ジェネレーター</title>
+    <link rel="stylesheet" href="/static/styles.css">
+</head>
+<body>
+    <header>
+        <h1>登山動画シーン説明ジェネレーター</h1>
+        <p>AIを活用した登山動画分析・編集支援ツール</p>
+    </header>
+    
+    <main>
+        <section id="upload-section">
+            <h2>動画のアップロード</h2>
+            <form id="upload-form">
+                <div class="form-group">
+                    <label for="video-file">動画ファイルを選択:</label>
+                    <input type="file" id="video-file" accept="video/*" required>
+                </div>
+                <button type="submit" id="upload-button">アップロード</button>
+            </form>
+        </section>
+        
+        <section id="analysis-section" style="display: none;">
+            <h2>分析結果</h2>
+            <div id="results-container">
+                <div id="loading">
+                    <p>分析中...<span id="progress"></span></p>
+                </div>
+                <div id="results" style="display: none;">
+                    <!-- 結果はこちらに表示 -->
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2025 Mountain Video Analyzer Team</p>
+    </footer>
+    
+    <script src="/static/script.js"></script>
+</body>
+</html> 
